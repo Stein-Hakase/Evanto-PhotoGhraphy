@@ -20,9 +20,11 @@
    <header class="container-fluid p-lg-0 mt-3">
         <!-- Navigation bar start here -->
         <h3 class=" col-12 my-4 text-center d-none d-md-block">Adam.</h3>
-        <nav class="navbar fixed-top navbar-expand-md " style="background-color: #18191D;">
+     
+        <nav class="navbar fixed-top navbar-expand-md ">
+              <button  onclick="lightMode()" class=" mb-md-4 dark-light">Dark/light</button>
             <h3 class=" m-auto d-block d-md-none">Adam.</h3>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button  type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="fas fa-bars"></span>
             </button>
         
@@ -40,7 +42,7 @@
    
         <div class="container-fluid header-hero">
              <div class="img-container"></div>
-             <h4 class="header-text">
+             <h4 class="header-text  text-white" >
                 “Taking an image, freezing a moment, 
                 reveals how rich reality truly is.”
              </h4>
@@ -119,16 +121,16 @@
     <h2 class="mb-5">Services <i class="fas fa-long-arrow-alt-right"></i></h2>
     <div class="services-img-container ">
         <img class='img-fluid'src="./img/services1.png" alt="">
-        <H3>Product Photography</H3>
+        <H3 style="color: white;">Product Photography</H3>
 
     </div>
     <div class="services-img-container">
         <img class='img-fluid'src="./img/services2.png" alt="">
-        <H3>Model Photography</H3>
+        <H3 style="color: white;">Model Photography</H3>
     </div>
     <div class="services-img-container">
         <img class='img-fluid'src="./img/services3.png" alt="">
-        <H3>wildlife Photography</H3>
+        <H3 style="color: white;">wildlife Photography</H3>
     </div>
 
    </section>
@@ -173,13 +175,13 @@
         </div>
    </section>
    <!-- contact section -->
-   <section  class="container contact">
-     <h2>Contact <i class="fas fa-long-arrow-alt-right"></i></h2>
-    <div class="row">
+   <section  class="container contact " >
+        <h2>Contact <i class="fas fa-long-arrow-alt-right"></i></h2>
+        <div class="row">
         <div class="col-md-6">
                 <div class="mt-5">
                     <p class="mb-4">E-mail:</p>
-                    <p>adamphotographs@hey.com</p>
+                    <p class="">adamphotographs@hey.com</p>
                 </div>
 
                 <div class="my-5">
@@ -203,7 +205,7 @@
 <!-- **********Footer********* -->
 <footer>
     <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h3 class=" col-12 my-4 text-center ">Adam.</h3>
+        <h3 class="text-white col-12 my-4 text-center ">Adam.</h3>
     
         <div class=" social-media d-flex   my-4">
             <i class="fab fa-twitter mx-4"></i>
@@ -211,13 +213,34 @@
             <i class="fab fa-behance mx-4"></i>
             <i class="fab fa-instagram mx-4"></i>
         </div>
-        <p class="my-4">2020. All Rights Reserved</p>
+        <p class="text-white my-4">2020. All Rights Reserved</p>
     </div>
 </footer>
 
    <script src="/js/bootstrap-js/popper.js"></script>
    <script src="/js/bootstrap-js/jquery.js"></script>
    <script src="/js/bootstrap-js/bootstrap.js"></script>
+   <script>
+       $( document ).ready(function() {
+         lightMode=()=>{
+        var element = document.body;
+        var nav = document.getElementsByClassName('navbar')
+        var btn = document.getElementsByClassName('dark-light')
+        var index = document.getElementsByClassName('index')
+
+
+        element.classList.toggle("light-mode");   
+        $( nav ).toggleClass( "light-nav" )
+        $( 'a' ).toggleClass( "dark-link" )
+        $( btn ).toggleClass( "light-btn" )
+        $( index ).toggleClass( "light-index" )
+
+
+
+        }
+})
+   
+   </script>
  
 </body>
 </html>

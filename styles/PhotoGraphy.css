@@ -6,6 +6,20 @@ body{
     font-family: 'Rubik', sans-serif;
 
 }
+
+.light-mode {
+    background-color: white;
+    color: black;
+  }
+.light-nav{
+    background-color:white !important;
+}
+.dark-link{
+   color: black;
+}
+.navbar{
+    background-color: #18191D;
+} 
 *{
     box-sizing: border-box;
 
@@ -40,9 +54,21 @@ h2{
 .fa-bars{
     color: white;
 }
+.dark-light{
+    text-decoration: none;
+    border: 1px solid white ;
+    padding: .7rem;
+    background-color: unset;
+    color: white;
+}
+.light-btn{
+    color: black !important;
+    border: 1px solid black !important ;
+}
 .fab{
     font-size: 40px;
     cursor: pointer;
+    color: white;
 }
 .nav-link{
     font-style: normal;
@@ -59,6 +85,9 @@ h2{
     padding: .6rem 1.2rem;
     border: 1px solid white;
     cursor: pointer;
+}
+.light-index{
+    border: 1px solid black;
 }
 .index:hover{
     background-color: white;
@@ -120,6 +149,9 @@ h2{
     position: absolute;
     bottom: 15%;
     left: 35%;
+}
+footer{
+    background-color: #18191D;
 }
 .blog , .contact{
     margin: 10rem auto;
