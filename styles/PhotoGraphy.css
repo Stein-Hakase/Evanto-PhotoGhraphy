@@ -16,6 +16,7 @@ a{
 }
 .fa-long-arrow-alt-right{
     font-size: 40px;
+    margin-left: 1.7rem;
 }
 p{
     font-style: normal;
@@ -41,6 +42,7 @@ h2{
 }
 .fab{
     font-size: 40px;
+    cursor: pointer;
 }
 .nav-link{
     font-style: normal;
@@ -109,11 +111,14 @@ h2{
 .services-img-container{
     margin: .8rem auto;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.services-img-container img{
+    opacity: .9;
 }
 .services-img-container h3{
     position: absolute;
     bottom: 15%;
-    
     left: 35%;
 }
 .blog , .contact{
@@ -135,5 +140,37 @@ h2{
         line-height: 30px;
         width: 83%;
         left: 1.5rem;
+    }
+    .services-img-container h3{
+        position: absolute;
+        bottom: 15%;
+        left: 12%;
+    }
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .fa-long-arrow-alt-right{
+        font-size: 25px;
+        margin-left: 1.5rem;
+    }
+    .nav-link{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .navbar-nav{
+        width: 100% !important;
     }
   }
