@@ -89,6 +89,10 @@ h2{
 .light-index{
     border: 1px solid black;
 }
+.light-index:hover{
+     background-color: black !important;
+     color: white !important;
+}
 .index:hover{
     background-color: white;
     color: black;
