@@ -9,7 +9,7 @@ body{
 
 .light-mode {
     background-color: white;
-    color: black;
+    color: black !important;
   }
 .light-nav{
     background-color:white !important;
@@ -53,6 +53,7 @@ h2{
 }
 .fa-bars{
     color: white;
+    font-size: 30px;
 }
 .dark-light{
     text-decoration: none;
@@ -75,7 +76,13 @@ h2{
     font-weight: normal;
     font-size: 32px;
     line-height: 38px;
+    padding-left: 1rem  !important;
+    padding-right: 1rem !important;
+
 }
+.nav-link:hover{
+    background-color:  #E5E5E5;
+    color:black;}
 .index{
     font-style: normal;
     font-weight: 500;

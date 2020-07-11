@@ -227,13 +227,16 @@
         var nav = document.getElementsByClassName('navbar')
         var btn = document.getElementsByClassName('dark-light')
         var index = document.getElementsByClassName('index')
+        var sandwich= document.getElementsByClassName('fa-bars')
 
 
         element.classList.toggle("light-mode");   
         $( nav ).toggleClass( "light-nav" )
         $( 'a' ).toggleClass( "dark-link" )
         $( btn ).toggleClass( "light-btn" )
-        $( index ).toggleClass( "light-index" )
+        $( index ).toggleClass( "light-index")
+        $( sandwich ).toggleClass( "light-mode" )
+
 
 
 
